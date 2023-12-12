@@ -7,7 +7,7 @@ import br.edu.inf011.aval3.enunciado.model.CartaoCredito;
 import br.edu.inf011.aval3.enunciado.model.Documento;
 import br.edu.inf011.aval3.enunciado.model.Perfil;
 
-
+//REALSUBJECT em um PROXY
 public class ClassificadorPerfil implements Classificador{
 	
 	private Perfil perfil;
@@ -15,9 +15,6 @@ public class ClassificadorPerfil implements Classificador{
 	public ClassificadorPerfil(Perfil perfil) {
 		this.perfil = perfil;
 	}
-	
-	
-	
 	
 	public NivelPerfil nivel() {
 		boolean hasCPF = false;
