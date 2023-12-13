@@ -1,9 +1,9 @@
 package br.edu.inf011.aval3.enunciado.builder;
-//interface Builder em Builder
+
 
 import br.edu.inf011.aval3.enunciado.exceptions.LimiteDeDocumentosNaCriacaoException;
 import br.edu.inf011.aval3.enunciado.model.Documento;
-
+//interface Builder em Builder
 public interface Builder {
     public void reset();
     public void addUsuario(String usuario);

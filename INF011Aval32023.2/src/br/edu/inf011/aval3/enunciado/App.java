@@ -14,7 +14,7 @@ import br.edu.inf011.aval3.enunciado.service.ClassificadorPerfil;
 import br.edu.inf011.aval3.enunciado.visitor.CalcValidadeVisitor;
 
 
-//Cliente em VISITOR
+//Cliente em VISITOR, BUILDER & PROXY
 public class App {
     private void rodarBuilder() throws LimiteDeDocumentosNaCriacaoException {
 		PerfilBuilder perfilBuilder = new PerfilBuilder();
