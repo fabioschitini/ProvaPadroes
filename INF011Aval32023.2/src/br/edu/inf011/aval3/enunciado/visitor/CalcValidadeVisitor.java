@@ -9,25 +9,25 @@ public class CalcValidadeVisitor implements Visitor{
 
     @Override
     public String visitCPF(CPF cpf) {
-        String qtdDiasFimValidade = "...";
+        String qtdDiasFimValidade = "A validade do cpf...";
         return qtdDiasFimValidade;
     }
 
     @Override
     public String visitCartaoCredito(CartaoCredito cartaoCredito) {
-        String qtdDiasFimValidade = "...";
+        String qtdDiasFimValidade = "A validade do cartao...";
         return qtdDiasFimValidade;
     }
 
     @Override
     public String visitEmail(EMail email) {
-        String qtdDiasFimValidade = "...";
+        String qtdDiasFimValidade = "A validade do email...";
         return qtdDiasFimValidade;
     }
 
     @Override
     public String visitRG(RG rg) {
-        String qtdDiasFimValidade = "...";
+        String qtdDiasFimValidade = "A validade rg...";
         return qtdDiasFimValidade;
     }
 
