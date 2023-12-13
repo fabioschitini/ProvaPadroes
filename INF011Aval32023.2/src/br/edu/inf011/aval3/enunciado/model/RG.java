@@ -3,6 +3,8 @@ package br.edu.inf011.aval3.enunciado.model;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
+import br.edu.inf011.aval3.enunciado.visitor.Visitor;
+//Concrete Element em VISITOR
 public class RG implements Documento{
 	
 	public String nome;
@@ -67,9 +69,10 @@ public class RG implements Documento{
 	public LocalDate getValidade() {
 		return validade;
 	}
-	
-	
-	
-	
 
+
+	@Override
+	public String accept(Visitor visitor) {
+		return visitor.visitRG(this);
+	}
 }

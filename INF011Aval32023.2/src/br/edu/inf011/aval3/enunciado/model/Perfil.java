@@ -53,7 +53,4 @@ public class Perfil {
 	public Stream<Documento> documentos(){
 		return this.documentos.stream();
 	}
-
-	
-	
 }

@@ -3,6 +3,8 @@ package br.edu.inf011.aval3.enunciado.model;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
+import br.edu.inf011.aval3.enunciado.visitor.Visitor;
+//Concrete Element em VISITOR
 public class CartaoCredito implements Documento{
 	public String nome;
 	public String numero;	
@@ -77,12 +79,10 @@ public class CartaoCredito implements Documento{
 	public LocalDate getVencimento() {
 		return vencimento;
 	}
-	
-	
-	
-	
-	
-	
-	
+
+	@Override
+	public String accept(Visitor visitor) {
+		return visitor.visitCartaoCredito(this);
+	}
 }
 
